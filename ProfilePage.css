@@ -3,14 +3,15 @@
     margin: 0;
 }
 
+/*---------------NAV BAR---------------*/
 
 .nav{
     height: 100%;
     padding: 10px;
-    background-color: rgb(51,51,51);
+    background-color: rgb(104,187,184);
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    /* justify-content:right; */
 }
 .nav-title{
     justify-self: flex-start;
@@ -36,12 +37,18 @@ a{
     width: 90px;
     height: 25px;
     color: white;
-    background-color: rgb(52,162,184);
+    background: rgb(212,26,100);
+    background: linear-gradient(0deg, rgba(212,26,100,1) 0%, rgba(245,103,161,1) 12%, rgba(248,145,187,1) 76%, rgba(213,83,135,1) 98%);/* background-color: */
     font-size: 15px;
     font-weight:lighter;
-    border: 2px solid black;
-    border-radius: 0px;
-    box-shadow: 3px 3px black;
+    border: 2px solid rgba(213,83,135,1);
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px black;
+    justify-self: left;
+}
+.active{
+    font-weight: bold;
+    color: lightyellow;
 }
 
 .main-container{
@@ -52,6 +59,9 @@ a{
 .left-container{
     /* display: flex; */
 }
+
+/*---------------USER CARD---------------*/
+
 .user{
     /* width: 400px; */
     background: linear-gradient(to top, rgb(255,255,255)70%, rgb(52,162,184) 30%);
@@ -63,7 +73,7 @@ a{
     /* align-items: center; */
     /* align-content: center; */
 }
-.photo{
+.user-photo{
     width:100px;
     margin: 10px 0px 0px 0px;
     padding: 20px 0px 0px 20px;
@@ -99,6 +109,9 @@ img{
 .right-container{
     /* display: flex; */
 }
+
+/*---------------CON REQ---------------*/
+
 .connect_request{
     display: flexbox;
     margin: 20px;
@@ -121,6 +134,7 @@ img{
     color: black;
     font-weight: lighter ;
     padding: 3px;
+    margin: 3px;
 }
 .connect-icon{
     justify-content: flex-end;
@@ -131,6 +145,9 @@ img{
     padding: 3px;
     align-items: baseline;
 }
+
+/*---------------CONNECTIONS---------------*/
+
 .connections{
     display: flexbox;
     margin: 20px;
@@ -146,11 +163,13 @@ img{
     padding: 5px;
     text-align: left;
 }
+.friend-photo{
 
-.col, .col-2{
+}
+
+
+.col{
     flex: 1;
-    padding: 10px;
-    margin: 15px;
 }
 .col-2{
     flex: 2;
@@ -158,8 +177,17 @@ img{
 
 
 .container{
-    /* display: inline-flex */
     /*for formatting only...remove before complete*/
     border: 2px dotted red;
-    padding: 5px;
+    padding: 5px; 
+}
+
+/*---------------MISC---------------*/
+.color-palette{
+    color: 
+    rgb(248,145,187)
+    rgb(251,217,93)
+    rgb(245,133,91)
+    rgb(104,187,184)
+
 }
