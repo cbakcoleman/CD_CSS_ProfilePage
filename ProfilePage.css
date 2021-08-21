@@ -13,7 +13,10 @@
     height: 100%;
     width: 100%;
     padding: 10px;
-    background-color: rgb(104,187,184);
+    background: rgb(72,29,82);
+    background: linear-gradient(0deg, rgba(72,29,82,1) 17%, rgba(10,10,10,0.9077240566037736) 60%, rgba(72,29,82,1) 100%);
+    box-shadow: 0px 10px 30px black;
+    border: 1px groove rgb(72,29,82);
     display: flex;
     align-items: baseline;
     /* justify-content:right; */
@@ -47,16 +50,16 @@ a{
 /*-------------------------LEFT COLUMN-------------------------*/
 .left-container{
     /* display: flex; */
-    /* padding: 20px; */
 }
 
 /*---------------USER CARD---------------*/
 .user{
     /* width: 500px; */
-    background: linear-gradient(to top, rgb(255,255,255)70%, rgb(248,145,187) 30%);
-    border: 2px solid lightgrey;
+    background: linear-gradient(to top, transparent 70%, rgb(221,81,126) 30%);
+    border: 1px groove rgb(36, 22, 39);
     margin: 20px;
     display: flexbox;
+    color: white;
     /* display: inline-flex */
     /* align-items: center; */
     /* align-content: center; */
@@ -66,7 +69,10 @@ a{
     height: 100%;
     margin: 20px;
     border-radius: 50px;
-    border: 3px solid rgb(251,217,93);
+    border: 1px groove rgb(221,81,126);
+    box-shadow: 
+        0 0  10px 7px rgb(221,81,126),
+        0 0 70px 10px rgb(230,142,53);
 }
 .name{
     font-size: 13px;
@@ -89,6 +95,33 @@ a{
     padding-bottom: 20px;
 }
 
+/*---------------EDUCATION---------------*/
+.education{
+    /* width: 500px; */
+    display: flexbox;
+    background: linear-gradient(to top, rgb(255,255,255)70%, rgb(248,145,187) 30%);
+    border: 2px solid lightgrey;
+    margin: 20px;
+    list-style: none;
+    /* display: inline-flex */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+.education h4{
+    background-color: rgb(245,133,91);
+    border: 2px solid rgb(245,133,91);
+    font-weight: lighter;
+    color: whitesmoke;
+    padding: 5px;
+    text-align: left;
+}
+.courses{
+    border: 2px solid lightgrey;
+    list-style: none;
+    padding: 3px;
+    align-items: baseline;
+}
+
 /*-------------------------RIGHT COLUMN-------------------------*/
 .right-container{
     /* display: flex; */
@@ -102,19 +135,16 @@ a{
     align-content: baseline;
 }
 .connect_request h4{
-    background-color: rgb(245,133,91);
-    border: 2px solid rgb(245,133,91);
+    background-color: rgb(85,108,201);
+    /* border: 2px solid rgb(72,29,82); */
     font-weight: lighter;
     color: whitesmoke;
     padding: 5px;
     text-align: left;
 }
-.connect_request button{
-    
-}
 .circle_number{
     background-color: rgb(204,204,204);
-    border: rgb(204,204,204)1px solid;
+    /* border: rgb(204,204,204)1px solid; */
     border-radius: 50%;
     color: black;
     font-weight: lighter ;
@@ -125,7 +155,7 @@ a{
     justify-content: flex-end;
 }
 .friends{
-    border: 2px solid lightgrey;
+    border: 2px solid rgb(72,29,82);
     list-style: none;
     padding: 3px;
     align-items: baseline;
@@ -138,8 +168,7 @@ a{
     /* width: 100%; */
 }
 .connections h4{
-    background-color: rgb(251,217,93);
-    border: 2px solid rgb(251,217,93);
+    background-color: rgb(122,152,237);
     font-weight: lighter;
     color: whitesmoke;
     padding: 5px;
@@ -158,11 +187,27 @@ a{
     rgb(245,133,91)
     rgb(104,187,184)
 }
+.other-color-palette{
+    color:
+    rgb(36, 22, 39) 
+    rgb(72,29,82) 
+    rgb(221,81,126)
+    rgb(230,142,53)
+    rgb(85,108,201)
+    rgb(122,152,237)
+}
 .overall-font{
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family:monospace;
+    /* font-family:fantasy; */
+
 }
 .gen-font-size{
     font-size: 15px;
+}
+.whole-background{
+    background: rgb(0,0,0);
+    background: linear-gradient(36deg, rgba(0,0,0,1) 1%, rgba(72,29,82,1) 17%, rgba(122,152,237,1) 57%, rgba(85,108,201,1) 62%, rgba(72,29,82,1) 88%, rgba(10,10,10,1) 98%);
 }
 
 /*---------------STRUCTURE---------------*/
@@ -176,12 +221,12 @@ a{
 /*---------------MULTI USE---------------*/
 .btn{
     color: white;
-    background: rgb(212,26,100);
-    background: linear-gradient(0deg, rgba(212,26,100,1) 0%, rgba(245,103,161,1) 12%, rgba(248,145,187,1) 76%, rgba(213,83,135,1) 98%);
+    background: rgb(0,0,0);
+    background: linear-gradient(36deg, rgba(0,0,0,1) 1%, rgba(72,29,82,1) 17%, rgba(122,152,237,1) 57%, rgba(85,108,201,1) 62%, rgba(72,29,82,1) 88%, rgba(10,10,10,1) 98%);
     font-weight:lighter;
     padding: 5px 7px 5px 7px;
-    margin: 0px 5px 0px 10px;
-    border-color:rgba(213,83,135,1);
+    margin: 0px 10px 0px 10px;
+    border-color:  rgb(36, 22, 39) ;
     border-radius: 30px;
     box-shadow: 3px 3px 5px black;
 }
