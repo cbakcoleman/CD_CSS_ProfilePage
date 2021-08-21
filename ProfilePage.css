@@ -3,10 +3,15 @@
     margin: 0;
 }
 
-/*---------------NAV BAR---------------*/
+/*-------------------------PAGE HEADER-------------------------*/
 
+/*---------------NAV BAR---------------*/
+.top-container{
+    display: flex;
+}
 .nav{
     height: 100%;
+    width: 100%;
     padding: 10px;
     background-color: rgb(104,187,184);
     display: flex;
@@ -19,17 +24,13 @@
     margin: 20px;
 }
 .nav-links{
-    background-color: transparent;
     list-style: none;
-    color: gray;
     display: flex;
 }
 a{
     margin: 5px;
     padding: 10px;
     color:darkgrey; 
-    background-color: transparent;
-    list-style: none;
     text-decoration: none;
 }
 .btn{
@@ -40,29 +41,30 @@ a{
     background: linear-gradient(0deg, rgba(212,26,100,1) 0%, rgba(245,103,161,1) 12%, rgba(248,145,187,1) 76%, rgba(213,83,135,1) 98%);
     font-weight:lighter;
     padding: 5px 7px 5px 7px;
-    border: 2px solid rgba(213,83,135,1);
+    border-color:rgba(213,83,135,1);
     border-radius: 30px;
     box-shadow: 3px 3px 5px black;
-    justify-self: left;
+    justify-self: right;
 }
 .active{
     font-weight: bold;
     color: lightyellow;
 }
 
+/*-----------------------------------MAIN BODY-----------------------------------*/
 .main-container{
     display: flex;
 }
 
-
+/*-------------------------LEFT COLUMN-------------------------*/
 .left-container{
     /* display: flex; */
+    /* padding: 20px; */
 }
 
 /*---------------USER CARD---------------*/
-
 .user{
-    /* width: 400px; */
+    /* width: 500px; */
     background: linear-gradient(to top, rgb(255,255,255)70%, rgb(248,145,187) 30%);
     border: 2px solid lightgrey;
     margin: 20px;
@@ -73,43 +75,38 @@ a{
 }
 .user-photo{
     width:100px;
-    margin: 10px 0px 0px 0px;
-    padding: 20px 0px 0px 20px;
-    /* border-radius: 50%; */
+    height: 100%;
+    margin: 20px;
+    border-radius: 50px;
     border: 3px solid rgb(251,217,93);
 }
 .name{
     font-size: 13px;
     padding: 0px 0px 0px 20px;
 }
-
 .map-marker{
     width: 15px;
+    margin: 5px 5px 0px 20px
+}
+.gear{
+    width: 20px;
 }
 .info{
-    /* font-size: 15px; */
     padding: 0px 0px 0px 20px;
 }
 .settings{
-    font-size: 12px;
+    font-size: 15px;
     color: blue;
     text-decoration: blue underline;
     padding-bottom: 20px;
 }
-img{
-    width: 15px;
-    margin: 3px;
-    padding: 0px 0px 0px 20px;
-    /* align-items: center; */
-}
 
-
+/*-------------------------RIGHT COLUMN-------------------------*/
 .right-container{
     /* display: flex; */
 }
 
 /*---------------CON REQ---------------*/
-
 .connect_request{
     display: flexbox;
     margin: 20px;
@@ -132,7 +129,7 @@ img{
     padding: 3px;
     margin: 3px;
 }
-.connect-icon{
+.accept-decline{
     justify-content: flex-end;
 }
 .friends{
@@ -143,7 +140,6 @@ img{
 }
 
 /*---------------CONNECTIONS---------------*/
-
 .connections{
     display: flexbox;
     margin: 20px;
@@ -157,26 +153,12 @@ img{
     padding: 5px;
     text-align: left;
 }
-.friend-photo{
-
-}
 
 
-.col{
-    flex: 1;
-}
-.col-2{
-    flex: 2;
-}
+/*-----------------------------------OVERALL-----------------------------------*/
 
 
-.container{
-    /*for formatting only...remove before complete*/
-    border: 2px dotted red;
-    padding: 5px; 
-}
-
-/*---------------MISC---------------*/
+/*---------------STYLE---------------*/
 .color-palette{
     color: 
     rgb(248,145,187)
@@ -189,4 +171,31 @@ img{
 }
 .gen-font-size{
     font-size: 15px;
+}
+
+/*---------------STRUCTURE---------------*/
+.col{
+    flex: 1;
+}
+.col-2{
+    flex: 2;
+}
+
+/*---------------MULTI USE---------------*/
+.friend-photo{
+    width: 20px;
+    height: 100%;
+    margin: 5px 5px 0px 10px;
+    border-radius: 50px;
+    border: red solid 2px;
+}
+.icon{
+    width: 20px;
+    margin: 5px 5px 0px 20px
+}
+.nav :last-child{
+    /* justify-content: right; */
+    /* justify-content: flex-end; */
+    /* justify-self: flex-end; */
+    justify-self: right;
 }
