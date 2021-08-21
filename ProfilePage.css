@@ -34,13 +34,14 @@ a{
     text-decoration: none;
 }
 .btn{
-    width: 90px;
-    height: 25px;
+    /* width: 90px;
+    height: 25px; */
     color: white;
     background: rgb(212,26,100);
     background: linear-gradient(0deg, rgba(212,26,100,1) 0%, rgba(245,103,161,1) 12%, rgba(248,145,187,1) 76%, rgba(213,83,135,1) 98%);/* background-color: */
     font-size: 15px;
     font-weight:lighter;
+    padding: 5px 7px 5px 7px;
     border: 2px solid rgba(213,83,135,1);
     border-radius: 30px;
     box-shadow: 3px 3px 5px black;
@@ -64,7 +65,7 @@ a{
 
 .user{
     /* width: 400px; */
-    background: linear-gradient(to top, rgb(255,255,255)70%, rgb(52,162,184) 30%);
+    background: linear-gradient(to top, rgb(255,255,255)70%, rgb(248,145,187) 30%);
     border: 2px solid lightgrey;
     margin: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -77,6 +78,8 @@ a{
     width:100px;
     margin: 10px 0px 0px 0px;
     padding: 20px 0px 0px 20px;
+    /* border-radius: 50%; */
+    border: 3px solid rgb(251,217,93);
 }
 .name{
     font-size: 13px;
@@ -118,8 +121,8 @@ img{
     /* width: 100%; */
 }
 .connect_request h4{
-    background-color: rgb(51,51,51);
-    border: 2px solid rgb(51,51,51);
+    background-color: rgb(245,133,91);
+    border: 2px solid rgb(245,133,91);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: lighter;
@@ -154,8 +157,8 @@ img{
     /* width: 100%; */
 }
 .connections h4{
-    background-color: rgb(51,51,51);
-    border: 2px solid rgb(51,51,51);
+    background-color: rgb(251,217,93);
+    border: 2px solid rgb(251,217,93);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: lighter;
@@ -189,5 +192,7 @@ img{
     rgb(251,217,93)
     rgb(245,133,91)
     rgb(104,187,184)
-
+}
+.overall-font{
+    font-family: Arial, Helvetica, sans-serif;
 }
