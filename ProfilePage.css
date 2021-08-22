@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
 }
-
 /*-------------------------PAGE HEADER-------------------------*/
 /*---------------NAV BAR---------------*/
 .top-container{
@@ -36,12 +35,10 @@ a{
     font-weight: bold;
     color: lightyellow;
 }
-
 /*-----------------------------------MAIN BODY-----------------------------------*/
 .main-container{
     display: flex;
 }
-
 /*-------------------------LEFT COLUMN-------------------------*/
 /*---------------USER CARD---------------*/
 .user{
@@ -72,7 +69,6 @@ a{
     text-decoration: rgb(122,152,237) underline;
     padding-bottom: 20px;
 }
-
 /*---------------EDUCATION---------------*/
 .education{
     display: flexbox;
@@ -88,7 +84,6 @@ a{
     border-top: 1px groove rgb(72,29,83);
     list-style: none;
 }
-
 /*-------------------------RIGHT COLUMN-------------------------*/
 /*---------------CON REQ CONNECTIONS---------------*/
 .connections{
