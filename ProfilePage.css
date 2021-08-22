@@ -42,11 +42,10 @@ a{
 /*-------------------------LEFT COLUMN-------------------------*/
 /*---------------USER CARD---------------*/
 .user{
-    /* width: 500px; */
+    width: 500px;
     background: linear-gradient(to top, transparent 70%, rgb(221,81,126) 30%);
     border: 1px groove rgb(36, 22, 39);
     margin: 20px;
-    display: flexbox;
 }
 .user-photo{
     width:100px;
@@ -55,10 +54,6 @@ a{
     box-shadow: 
         0 0  10px 7px rgb(221,81,126),
         0 0 70px 10px rgb(230,142,53);
-}
-.icon{
-    width: 15px;
-    margin: 5px 5px 0px 20px;
 }
 .info{
     padding: 0px 0px 0px 20px;
@@ -71,7 +66,7 @@ a{
 }
 /*---------------EDUCATION---------------*/
 .education{
-    display: flexbox;
+    width: 500px;
     margin: 20px;
     list-style: none;
     border: 1px groove rgb(72,29,82);
@@ -83,11 +78,12 @@ a{
 .courses{
     border-top: 1px groove rgb(72,29,83);
     list-style: none;
+    margin-bottom: 10px;
 }
 /*-------------------------RIGHT COLUMN-------------------------*/
 /*---------------CON REQ CONNECTIONS---------------*/
 .connections{
-    display: flexbox;
+    width: 250px;
     margin: 20px;
     border: 1px groove rgb(72,29,82);
 }
@@ -116,7 +112,8 @@ a{
     font-family:monospace;
     color: whitesmoke;
 }
-.whole-background{
+body, html{
+    height: 100%;
     background: rgb(0,0,0);
     background: linear-gradient(36deg, rgba(0,0,0,1) 1%, rgba(72,29,82,1) 17%, rgba(122,152,237,1) 57%, rgba(85,108,201,1) 62%, rgba(72,29,82,1) 88%, rgba(10,10,10,1) 98%);
 }
@@ -126,9 +123,6 @@ a{
 }
 .col-2{
     flex: 2;
-}
-.pad{
-    padding: 0px 0px 0px 20px;
 }
 /*---------------MULTI USE---------------*/
 .gen-font-size{
@@ -147,14 +141,21 @@ a{
     border: 1px groove black;
     border-radius: 30px;
 }
-.shadow{
-    box-shadow: 2px 2px 10px 3px black;
+.icon{
+    width: 15px;
+    margin: 5px 5px 0px 20px;
 }
 .friend-photo{
     width: 20px;
     margin: 5px 20px 0px 10px;
     border-radius: 50px;
 }
+.shadow{
+    box-shadow: 2px 2px 10px 3px black;
+}
 .lighter{
     color: lightgray;
+}
+.pad{
+    padding: 5px 5px 5px 20px;
 }
